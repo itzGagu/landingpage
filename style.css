@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Myfont';
+
+    src: url('D:\landingpage\font') format('truetype');
+    font-weight:normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myfont';
+    src: url('D:\landingpage\font') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+*{
+    margin :0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+#main{
+    height:100%;
+    width:100%;
+    background-color: hsl(31, 90%, 72%);
+    display:flex;
+}
+#part1{
+    height:100%;
+    width:26%;
+   /* background-color: rgb(186, 64, 64);*/
+}
+#part2{
+    height:100%;
+    width:55%;
+    background-color: rgb(246, 199, 128);
+   background-image: url(https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#overlay{
+    height:100%;
+    width:100%;
+    background-color:hsla(60, 5%, 59%, 0.432);
+    
+}
+#part3{
+    height:100%;
+    width:7%;
+   /* background-color: rgb(43, 27, 4);*/
+}
+#text-div{
+    position:absolute;
+    width:480px;
+    left:20%;
+    top:50%;
+    transform:translate(0%,-50%);
+}
+#text-div>h1{
+    font-size: 95px;
+    font-family: 'Myfont',sans-serif;
+    letter-spacing: 5px;
+    font-weight: 900;
+    line-height:78px;
+    color:white;
+    text-transform: uppercase;
+}
+#small-image{
+    height:400px;
+    width:300px;
+    background-image: url(https://images.pexels.com/photos/2825034/pexels-photo-2825034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    position:absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top:50%;
+    right:5%;
+    transform:translate(-40%,-50%);
+   }
+   #overlay2{
+    height:100%;
+    width:89.1%;
+    background-color:hsla(60, 5%, 59%, 0.432);
+   }
+   #vertical-text{
+    position:absolute;
+    transform: rotate(90deg);
+    right:-24%;
+    top:-6%;
+    transform-origin: 0% 0%;
+    
+}
+#vertical-text h1{
+    font-size:73px;
+    font: weight 900px;
+    color:transparent;
+    letter-spacing: 3px;
+    font-family:'Myfont' ,sans-serif;
+    text-transform: uppercase;
+    -webkit-text-stroke-color:#fff ;
+    -webkit-text-stroke-width:2px;
+
+}
+#nav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width:400px;
+    left:4%;
+    top:5%;
+}
+#nav img{
+height: 60px;
+}
+#nav h5{
+    font-size: 14px;
+    color:#fff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
